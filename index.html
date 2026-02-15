@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MADINA FACILITE</title>
+
+<!-- أيقونات Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+/* الخلفية الفيديو */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* يحافظ على الجودة والحجم */
+    z-index: -1;
+}
+
+/* تصميم الموقع */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+/* رأس الموقع مع اللوغو والمعلومات */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background: rgba(0,0,0,0.5);
+}
+
+/* معلومات الفرع */
+.branch-info {
+    text-align: right;
+    max-width: 65%;
+}
+
+.branch-info h2 {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+}
+
+.branch-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.branch-info a button {
+    margin-top: 10px;
+    background: #1877f2;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.branch-info a button:hover {
+    background: #0d5fd8;
+}
+
+/* اللوغو دائري بالكامل */
+.logo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%; /* دائري كامل */
+    object-fit: cover; /* يحافظ على جودة الصورة */
+    border: 3px solid white;
+}
+
+/* متجاوب */
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .branch-info {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .logo {
+        margin-top: 10px;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- الفيديو كخلفية -->
+<video autoplay muted loop id="bg-video">
+    <source src="video1.mp4.mp4" type="video/mp4">
+</video>
+
+<div class="header-container">
+    <div class="branch-info">
+        <h2>SAIDA</h2>
+        <p><i class="fas fa-map-marker-alt"></i> شارع قرفوف بوجلال "باطيمات السوق" أمام مقر مديرية التربية والتعليم لولاية سعيدة</p>
+        <p><i class="fas fa-phone"></i> 05.53.77.46.34</p>
+        <p><i class="fas fa-phone"></i> 06.96.11.87.35</p>
+        <p><i class="fas fa-phone"></i> 05.49.61.08.82</p>
+        <a href="https://www.facebook.com/share/1BaSsxytct/" target="_blank">
+            <button><i class="fab fa-facebook-f"></i> FACBOOK </button>
+        </a>
+    </div>
+    <img src="logo.png.jpg" alt="لوغو الشركة" class="logo">
+</div>
+
+</body>
+</html>
