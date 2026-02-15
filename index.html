@@ -9,22 +9,25 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 <style>
-/* الخلفية الفيديو */
+/* الفيديو كخلفية */
 #bg-video {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* يحافظ على الجودة والحجم */
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    transform: translate(-50%, -50%); /* مركزي */
     z-index: -1;
+    background: black; /* فراغات حول الفيديو */
 }
 
 /* تصميم الموقع */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    color: rgb(255, 255, 255);
+    color: white;
 }
 
 /* رأس الموقع مع اللوغو والمعلومات */
@@ -33,7 +36,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.85); /* داكن وقوي */
+    border-radius: 15px;
+    margin: 20px;
 }
 
 /* معلومات الفرع */
@@ -45,11 +50,16 @@ body {
 .branch-info h2 {
     margin: 0 0 10px 0;
     font-size: 28px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
 
 .branch-info p {
     margin: 5px 0;
     font-size: 16px;
+    display: flex;
+    align-items: center; /* الأيقونة والنص على نفس المستوى */
+    gap: 8px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 
 .branch-info a button {
@@ -60,6 +70,9 @@ body {
     padding: 10px 15px;
     border-radius: 8px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .branch-info a button:hover {
@@ -107,7 +120,7 @@ body {
         <p><i class="fas fa-phone"></i> 06.96.11.87.35</p>
         <p><i class="fas fa-phone"></i> 05.49.61.08.82</p>
         <a href="https://www.facebook.com/share/1BaSsxytct/" target="_blank">
-            <button><i class="fab fa-facebook-f"></i> FACBOOK </button>
+            <button><i class="fab fa-facebook-f"></i> FACEBOOK</button>
         </a>
     </div>
     <img src="logo.png.jpg" alt="لوغو الشركة" class="logo">
